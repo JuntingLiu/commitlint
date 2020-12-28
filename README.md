@@ -11,16 +11,8 @@
 
 ## 配置
 
-1. 如果您是 vue-cli3 的项目可以直接使用即可
-
 ```bash
-vue add commitlint
-```
-
-2. 如果您不是 vue-cli3 的项目
-
-```bash
-npm i vue-cli-plugin-commitlint commitizen commitlint conventional-changelog-cli husky -D
+npm i commitlint-prompt commitizen commitlint conventional-changelog-cli husky -D
 ```
 
 - 在 package.json 中添加
@@ -28,7 +20,7 @@ npm i vue-cli-plugin-commitlint commitizen commitlint conventional-changelog-cli
 ```json
 {
   "scripts": {
-    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0",
+    "log": "conventional-changelog --config commitlint-prompt/lib/log -i CHANGELOG.md -s -r 0",
     "cz": "npm run log && git add . && git cz"
   },
   "husky": {
@@ -38,7 +30,7 @@ npm i vue-cli-plugin-commitlint commitizen commitlint conventional-changelog-cli
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
+      "path": "commitlint-prompt/lib/cz"
     }
   }
 }
@@ -48,7 +40,7 @@ npm i vue-cli-plugin-commitlint commitizen commitlint conventional-changelog-cli
 
 ```js
 module.exports = {
-  extends: ['./node_modules/vue-cli-plugin-commitlint/lib/lint']
+  extends: ['commitlint-prompt/lib/lint']
 };
 ```
 
@@ -69,8 +61,8 @@ npm run log # 生成 CHANGELOG
     2. (必填）写一个简短的变化描述
     3. (非必填）提供更详细的变更描述
     4. (非必填)是否存在不兼容变更?
-    5. (非必填)此次变更是否影响某些打开的 issue 
- 
+    5. (非必填)此次变更是否影响某些打开的 issue
+
 ![prompt](./public/prompt.png)
 
 ### changelog 演示
