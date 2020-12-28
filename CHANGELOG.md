@@ -1,4 +1,4 @@
-# 0.0.0 (2020-12-28)
+## [0.0.1](https://github.com/JuntingLiu/commitlint/compare/8cd3d82...v0.0.1) (2020-12-28)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -6,6 +6,7 @@
  init | init | [8cd3d82](https://github.com/JuntingLiu/commitlint/commit/8cd3d82)
  package | 发布1.0.2版本 | [7bc2b42](https://github.com/JuntingLiu/commitlint/commit/7bc2b42)
  version | 增加1.0.7版本 | [6937136](https://github.com/JuntingLiu/commitlint/commit/6937136)
+ - | 删除与 Vul-cli 相关的配置 | [b1fc4e8](https://github.com/JuntingLiu/commitlint/commit/b1fc4e8)
 
 
 ### 🐛 Bug 修复
@@ -34,6 +35,11 @@
  readme | 修改readme 格式 | [84b30fd](https://github.com/JuntingLiu/commitlint/commit/84b30fd)
  readme | 修改了readme | [49d50a4](https://github.com/JuntingLiu/commitlint/commit/49d50a4)
  readme | 修改了reame 文件 | [0f68758](https://github.com/JuntingLiu/commitlint/commit/0f68758)
+
+
+范围|描述|commitId
+--|--|--
+ - | 0.0.1 | [ede6c17](https://github.com/JuntingLiu/commitlint/commit/ede6c17)
 
 
 ### 💡 不兼容变更

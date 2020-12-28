@@ -20,7 +20,7 @@ npm i commitlint-prompt commitizen commitlint conventional-changelog-cli husky -
 ```json
 {
   "scripts": {
-    "log": "conventional-changelog --config commitlint-prompt/lib/log -i CHANGELOG.md -s -r 0",
+    "log": "conventional-changelog --config ./node_modules/commitlint-prompt/lib/log -i CHANGELOG.md -s -r 0",
     "cz": "npm run log && git add . && git cz"
   },
   "husky": {
@@ -30,7 +30,7 @@ npm i commitlint-prompt commitizen commitlint conventional-changelog-cli husky -
   },
   "config": {
     "commitizen": {
-      "path": "commitlint-prompt/lib/cz"
+      "path": "./node_modules/commitlint-prompt/lib/cz"
     }
   }
 }
@@ -40,7 +40,7 @@ npm i commitlint-prompt commitizen commitlint conventional-changelog-cli husky -
 
 ```js
 module.exports = {
-  extends: ['commitlint-prompt/lib/lint']
+  extends: ['./node_modules/commitlint-prompt/lib/lint']
 };
 ```
 
